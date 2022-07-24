@@ -1,8 +1,9 @@
 import React from 'react'
+import '../styles/gif.css'
 
 function Gif({title, id, url}) {
   return (
-    <div>
+    <div className='gif-container'>
         <h4>{title}</h4>
         <small>{id}</small>
         <img src={url}/>

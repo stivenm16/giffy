@@ -1,0 +1,15 @@
+.gif-container {
+    padding: 1rem;
+    
+    width: 70%;
+    position: relative;
+    background-color: var(--container-color);
+    border-radius: 20px;
+}
+.gif-container img {
+    width: 100%;
+    object-fit: contain;
+    padding: 2rem;
+    
+ 
+}
