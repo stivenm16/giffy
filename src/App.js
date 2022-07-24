@@ -23,30 +23,30 @@ function App() {
         <ul className='searcher'>
             <li>
                 <Link to='/gif/Uchiha'>
-                    <h3>
+                    <h2>
                     Uchiha  
-                    </h3>
+                    </h2>
                 </Link>        
             </li>
             <li>
                 <Link to='/gif/Senju'>
-                    <h3>
+                    <h2>
                         Senju
-                    </h3>
+                    </h2>
                 </Link>        
             </li>
             <li>
                 <Link to='/gif/Namikaze'>
-                    <h3>
+                    <h2>
                         Namikaze
-                    </h3>
+                    </h2>
                 </Link>        
             </li>
             <li>
                 <Link to='/gif/Itachi'>
-                    <h3>
+                    <h2>
                         Itachi
-                    </h3>
+                    </h2>
                 </Link>        
             </li>
             <li>

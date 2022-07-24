@@ -18,7 +18,7 @@ h1 {
 }
 
 h3, h4 {
-  color: var(--text-color);
+  color: var(--body-color);
   font-size: 2rem;
 }
 
