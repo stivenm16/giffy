@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import getGifs from './getGifs';
-import Gif from './Gif';
+import getGifs from './services/getGifs';
+import ListOfGifs from './components/ListOfGifs';
 
 
 function App() {
@@ -15,9 +15,7 @@ function App() {
   return (
     <div className="App">
       <section className='App-content'>
-      {
-        gifs.map(gif => <Gif title={gif.title} url ={gif.url} id={gif.id}/>)
-      }
+        <ListOfGifs gifs={gifs}/>
 
       </section>
     </div>
