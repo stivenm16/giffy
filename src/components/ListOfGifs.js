@@ -19,7 +19,7 @@ function ListOfGifs({params}) {
 
 
     if (loading) {
-        return <i class='bx bxl-react icon-loading'></i>
+        return 
     }
 
   return  <div className='gifs-container'>

@@ -3,11 +3,11 @@
 
 :root {
   
-  --title-color: #f55951;
+  --title-color: #2c698d;
   --text-color: #543c52;
   
   --body-color: #f1e8e6;
-  --container-color: #361d32;
+  --container-color: #272643;
 }
 
 
@@ -26,6 +26,7 @@ h3, h4 {
   
   box-sizing: border-box;
   padding: 0;
+
   margin: 0;
 }
 
@@ -50,7 +51,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f1e8e6;
+  background-color: #e3f6f5;
 }
 
 code {

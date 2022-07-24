@@ -1,4 +1,4 @@
-.nav-bar {
+/* .nav-bar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,7 +6,7 @@
     flex-direction: column;
     
     
-}
+} */
 
 h1{
     font-size: 2.5rem;
@@ -16,14 +16,13 @@ h1{
 
 .icon-loading {
     animation: rotate 5s linear infinite;
-    font-size:8rem;
+    font-size:6rem;
 }
 .searcher {
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: flex;
-    
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 8rem;
     gap: 2rem;
 }

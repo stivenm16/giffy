@@ -17,45 +17,45 @@ function App() {
       
       <section className='App-content'>
         
-        
       <div className='nav-bar'>
         <h1>Puedes buscar Gifs de:</h1>
+        <i class='bx bxl-react icon-loading'></i>  
         <ul className='searcher'>
+        
             <li>
-                <Link to='/gif/Uchiha'>
+                <Link to='/search/Uchiha'>
                     <h2 className='links-navbar'>
                     Uchiha  
                     </h2>
                 </Link>        
             </li>
             <li>
-                <Link to='/gif/Senju'>
+                <Link to='/search/Senju'>
                 <h2 className='links-navbar'>
                         Senju
                     </h2>
                 </Link>        
             </li>
             <li>
-                <Link to='/gif/Namikaze'>
+                <Link to='/search/Namikaze'>
                 <h2 className='links-navbar'>
                         Namikaze
                     </h2>
                 </Link>        
             </li>
             <li>
-                <Link to='/gif/Itachi'>
-                <h2 className='links-navbar'>
+                <Link to='/search/Itachi'>
+                 <h2 className='links-navbar'>
                         Itachi
                     </h2>
                 </Link>        
             </li>
-            <li>
-                
-            </li>
+            
+            
         </ul>
         
         <Route 
-        path='/gif/:keyword'
+        path='/search/:keyword'
         component={ListOfGifs}
         />
         

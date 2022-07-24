@@ -1,15 +1,17 @@
 .gif-container {
     
     justify-content: center;
-    padding: 1rem;
     
-    width: 80%;
     position: relative;
     background-color: var(--container-color);
     border-radius: 20px;
-    margin: 1rem 0;
+    
     box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.39);
-    align-self: center;
+    
+}
+
+.card-title {
+    font-size: 18px;
 }
 .gif-container img {
     width: 100%;
