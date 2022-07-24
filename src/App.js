@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import getGifs from './getGifs';
+import Gif from './Gif';
 
 
 function App() {
@@ -8,14 +9,14 @@ function App() {
   const [gifs, setGifs] = useState([])
 
   useEffect(function() {
-    getGifs().then(gifs => setGifs(gifs))
+    getGifs({keyword: 'programming'}).then(gifs => setGifs(gifs))
   },[])
   
   return (
     <div className="App">
       <section className='App-content'>
       {
-        gifs.map(gif => <img src={gif}/>)
+        gifs.map(gif => <Gif title={gif.title} url ={gif.url} id={gif.id}/>)
       }
 
       </section>
