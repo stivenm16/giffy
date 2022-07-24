@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
-import Gif from './Gif'
-import getGifs from '../services/getGifs'
-import '../styles/listofgifs.css'
+import Gif from '../Gif'
+import getGifs from '../../services/getGifs'
+import './listofgifs.css'
 
 function ListOfGifs({params}) {
     const {keyword} = params
@@ -18,9 +18,7 @@ function ListOfGifs({params}) {
 
 
 
-    if (loading) {
-        return 
-    }
+    
 
   return  <div className='gifs-container'>
     {

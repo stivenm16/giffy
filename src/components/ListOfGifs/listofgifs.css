@@ -1,7 +1,7 @@
 :root {
     --gridList-column: 250px;
-    --gridList-rows: 280px;
-    --gridList-gap: 1rem;
+    --gridList-rows: 250px;
+    --gridList-gap: 4rem;
   }
   
   .gifs-container {
@@ -15,4 +15,5 @@
     gap: var(--gridList-gap, 6px);
     align-items: center;
     padding: 0 1rem;
+    margin-top: 4rem;
   }
