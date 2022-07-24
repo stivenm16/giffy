@@ -18,12 +18,12 @@ export default function getGifs({keyword = 'potter'} = {}) {
             const {id, title, images} = image
             const {url} = images.downsized_medium
             
+            console.log(data[0])
             return {title, id, url}
             
             
         })
         
-        console.log(gifs)
           return gifs
     
         })

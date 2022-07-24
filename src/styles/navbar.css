@@ -13,15 +13,28 @@ h1{
     margin-top: 2rem;
 }
 
+
+.icon-loading {
+    animation: rotate 5s linear infinite;
+    font-size:8rem;
+}
 .searcher {
     margin-top: 5rem;
     display: flex;
-    /* flex-direction: column; */
+    
     align-items: center;
     justify-content: space-between;
     margin-bottom: 8rem;
     gap: 2rem;
+}
 
-
+.links-navbar{
+    cursor: pointer;
 
 }
+
+@keyframes rotate{
+    to{ transform: rotate(360deg); }
+  }
+  
+  

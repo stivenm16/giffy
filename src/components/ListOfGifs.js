@@ -9,9 +9,18 @@ function ListOfGifs({params}) {
     const [gifs, setGifs] = useState([])
 
     useEffect(function() {
+        setLoading(true)
         getGifs({keyword})
         .then(gifs => setGifs(gifs))
+
+        setLoading(false)
       },[keyword])
+
+
+
+    if (loading) {
+        return <i class='bx bxl-react icon-loading'></i>
+    }
 
   return  <div className='gifs-container'>
     {

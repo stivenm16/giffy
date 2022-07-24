@@ -2,11 +2,10 @@
 
 
 :root {
-  /* --first-color: hsl(var(--first-hue), var(--sat), var(--lig)); */
-  /* --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); -4% */
+  
   --title-color: #f55951;
   --text-color: #543c52;
-  /* --text-color-light: hsl(var(--second-hue), 4%, 55%); */
+  
   --body-color: #f1e8e6;
   --container-color: #361d32;
 }
