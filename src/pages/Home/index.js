@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, useLocation } from 'wouter'
 import useGifs from '../../hooks/useGifs'
 import Gif from '../../components/Gif'
+import './home.css'
 
 const POPULAR_GIFS = ['Uchiha', 'Itachi', 'Naruto']
 
@@ -23,7 +24,7 @@ function Home() {
   }
   return (
     <div>
-      <form onSubmit={handleSubmit} >
+      <form onSubmit={handleSubmit} className='searcher-form'>
         
         <input 
         placeholder='¡Busca un Gif!' 

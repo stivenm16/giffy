@@ -23,7 +23,7 @@ function App() {
       <section className='App-content'>
         
       <div className='nav-bar'>
-        <h1>Puedes buscar Gifs de:</h1>
+        <h1>¡Encuentra tus Gifs favoritos!</h1>
        
 
         <Link to='/'>
