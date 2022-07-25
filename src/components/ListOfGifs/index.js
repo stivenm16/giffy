@@ -17,9 +17,6 @@ function ListOfGifs({params}) {
       },[keyword])
 
 
-
-    
-
   return  <div className='gifs-container'>
     {
         gifs.map(({title, id, url}) => 
