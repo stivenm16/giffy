@@ -6,23 +6,30 @@ import ListOfGifs from './components/ListOfGifs';
 import './styles/navbar.css'
 import Home from './pages/Home';
 import Detail from './pages/Detail';
+import StaticContext from './context/StaticContext';
+import { GifContextProvider } from './context/GifContext';
 
 
 function App() {
   
 
   return (
+    <StaticContext.Provider value=
+    {
+      {name: 'kev', suscribete: true}   
+    }>
     <div className="App">
       
       <section className='App-content'>
         
       <div className='nav-bar'>
         <h1>Puedes buscar Gifs de:</h1>
-        
+       
+
         <Link to='/'>
         <i className='bx bxl-react icon-loading'></i>  
         </Link>
-
+        <GifContextProvider>
         <Route 
         path='/'
         component={Home}
@@ -35,13 +42,14 @@ function App() {
         component={Detail}
         path='/detail/:id'
         />
-        
+        </GifContextProvider>
 
     </div>
 
        
       </section>
     </div>
+    </StaticContext.Provider>
   );
 }
 
