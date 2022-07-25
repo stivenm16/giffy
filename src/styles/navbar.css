@@ -18,6 +18,8 @@ h1{
     animation: rotate 5s linear infinite;
     font-size:6rem;
     cursor: pointer;
+    margin-top: 2.5rem;
+    margin-right: 3rem;
 }
 .searcher {
     margin-top: 2rem;

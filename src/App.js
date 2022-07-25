@@ -30,6 +30,11 @@ function App() {
         <i className='bx bxl-react icon-loading'></i>  
         </Link>
         <GifContextProvider>
+        <Route path='/'>
+          {/* <br className='space'/> */}
+          
+          <h2 className='space'>Presiona el ícono y empieza tu busqueda :)</h2>
+        </Route>
         <Route 
         path='/giffy/'
         component={Home}

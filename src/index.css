@@ -91,3 +91,8 @@ code {
 .App-content {
   font-weight: 700;
 }
+ .space {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+ }

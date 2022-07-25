@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import { Link, useLocation } from 'wouter'
+import { useLocation } from 'wouter'
 import useGifs from '../../hooks/useGifs'
-import Gif from '../../components/Gif'
+
 import './home.css'
-import Category from '../../components/Category'
+
 import TrendingSearch from '../../components/TrendingSearch'
 
-const POPULAR_GIFS = ['Uchiha', 'Itachi', 'Naruto']
+
 
 
 
@@ -14,7 +14,7 @@ function Home() {
 
   const [keyword, setKeyword] = useState('')
   const [path, pushLocation] = useLocation()
-  const {gifs} = useGifs()
+  
 
   const handleChange =  event => {
     setKeyword(event.target.value)
