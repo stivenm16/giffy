@@ -26,12 +26,12 @@ function App() {
         <h1>¡Encuentra tus Gifs favoritos!</h1>
        
 
-        <Link to='/'>
+        <Link to='/giffy/'>
         <i className='bx bxl-react icon-loading'></i>  
         </Link>
         <GifContextProvider>
         <Route 
-        path='/'
+        path='/giffy/'
         component={Home}
         />
         <Route 
