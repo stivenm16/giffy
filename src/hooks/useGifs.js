@@ -3,16 +3,20 @@ import getGifs from "../services/getGifs"
 
 
 
-function useGifs({keyword}) {
+function useGifs({keyword} = {keyword: null}) {
     const [loading, setLoading] = useState(false)
     const [gifs, setGifs] = useState([])
 
     useEffect(function() {
         setLoading(true)
-        getGifs({keyword})
+        
+      const keywordToUSe = keyword || localStorage.getItem('lastKeyword')
+
+        getGifs({keyword: keywordToUSe})
         .then(gifs => setGifs(gifs))
 
         setLoading(false)
+        if(keyword) localStorage.setItem('lastKeyword', keyword)
       },[keyword])
 
       return {loading, gifs}

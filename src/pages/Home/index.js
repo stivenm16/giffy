@@ -11,7 +11,7 @@ function Home() {
 
   const [keyword, setKeyword] = useState('')
   const [path, pushLocation] = useLocation()
-  const {gifs} = useGifs({keyword: 'Naruto'})
+  const {gifs} = useGifs()
 
   const handleChange =  event => {
     setKeyword(event.target.value)
