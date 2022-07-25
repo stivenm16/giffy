@@ -17,6 +17,7 @@ h1{
 .icon-loading {
     animation: rotate 5s linear infinite;
     font-size:6rem;
+    cursor: pointer;
 }
 .searcher {
     margin-top: 2rem;
