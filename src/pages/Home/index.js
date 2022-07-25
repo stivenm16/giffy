@@ -3,6 +3,8 @@ import { Link, useLocation } from 'wouter'
 import useGifs from '../../hooks/useGifs'
 import Gif from '../../components/Gif'
 import './home.css'
+import Category from '../../components/Category'
+import TrendingSearch from '../../components/TrendingSearch'
 
 const POPULAR_GIFS = ['Uchiha', 'Itachi', 'Naruto']
 
@@ -38,31 +40,8 @@ function Home() {
 
       </form>
       <h4>Los gif más populares</h4>
-        <ul className='searcher'>
-            {POPULAR_GIFS.map(popularGif => (
-                <li key={popularGif}>
-                <Link to={`/search/${popularGif}`}>
-                    <h2 className='links-navbar'>
-                    {popularGif}
-                    </h2>
-                </Link>        
-            </li>
-            ))}
-            
-        </ul>
-        <div className='gifs-container'>
-        {
-          gifs.map(({title, id, url}) => 
-              
-              <Gif 
-              title={title} 
-              url ={url} 
-              id={id} 
-              key={id}
-          />)
-  
-        }
-        </div>
+        
+        <TrendingSearch className='trending-gifs'/>
 
     </div>
   )
