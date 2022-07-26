@@ -31,13 +31,15 @@ function App() {
         </Link>
         <GifContextProvider>
         <Route path='/welcome'>
-          
+          <i class='bx bx-chevrons-up arrow-up'></i>
           <h2 className='space'>Presiona el ícono y empieza tu busqueda :)</h2>
         </Route>
-        <Route 
-        path='/giffy/'
-        component={Home}
-        />
+        <Route path='/giffy/'>
+          <Home/>
+          
+        </Route> 
+        
+        
         <Route 
         path='/search/:keyword'
         component={ListOfGifs}

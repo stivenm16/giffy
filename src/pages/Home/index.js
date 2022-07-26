@@ -5,6 +5,7 @@ import { useLocation } from 'wouter'
 import './home.css'
 
 import TrendingSearch from '../../components/TrendingSearch'
+import Category from '../../components/Category'
 
 
 
@@ -44,6 +45,7 @@ function Home() {
       <h4>Los gif más populares</h4>
         
         <TrendingSearch className='trending-gifs'/>
+        
 
     </div>
   )

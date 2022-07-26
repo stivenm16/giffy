@@ -8,9 +8,12 @@ function TrendingSearch() {
     useEffect(function () {
         getTrendingTerms().then(setTrends)
     })
+
+  
   return (
     <div>
         <Category options={trends}/>
+
     </div>
   )
 }
