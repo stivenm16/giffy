@@ -26,15 +26,15 @@ function App() {
         <h1>¡Encuentra tus Gifs favoritos!</h1>
        
 
-        <Link to='/giffy/'>
+        <Link to='/'>
         <i className='bx bxl-react icon-loading'></i>  
         </Link>
         <GifContextProvider>
-        <Route path='/welcome'>
+        <Route path='/giffy'>
           <i class='bx bx-chevrons-up arrow-up'></i>
           <h2 className='space'>Presiona el ícono y empieza tu busqueda :)</h2>
         </Route>
-        <Route path='/giffy/'>
+        <Route path='/'>
           <Home/>
           
         </Route> 

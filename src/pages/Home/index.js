@@ -5,7 +5,7 @@ import { useLocation } from 'wouter'
 import './home.css'
 
 import TrendingSearch from '../../components/TrendingSearch'
-import Category from '../../components/Category'
+
 
 
 
