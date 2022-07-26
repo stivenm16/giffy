@@ -32,7 +32,11 @@ h1{
 
 .links-navbar{
     cursor: pointer;
+    transition: .5s ease-in-out;
+}
 
+.links-navbar:hover {
+    transform: translateY(-5px);
 }
 
 @keyframes rotate{

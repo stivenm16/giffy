@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useLocation } from 'wouter'
-import useGifs from '../../hooks/useGifs'
+
 
 import './home.css'
 
@@ -36,7 +36,9 @@ function Home() {
         className='input-search'
         />
 
-        <button>Buscar</button>
+        <button className='btn-search'>
+          Buscar
+        </button>
 
       </form>
       <h4>Los gif más populares</h4>

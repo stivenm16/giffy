@@ -16,7 +16,7 @@ function App() {
   return (
     <StaticContext.Provider value=
     {
-      {name: 'kev', suscribete: true}   
+      {name: 'prueba', suscribete: true}   
     }>
     <div className="App">
       
@@ -30,8 +30,7 @@ function App() {
         <i className='bx bxl-react icon-loading'></i>  
         </Link>
         <GifContextProvider>
-        <Route path='/'>
-          {/* <br className='space'/> */}
+        <Route path='/welcome'>
           
           <h2 className='space'>Presiona el ícono y empieza tu busqueda :)</h2>
         </Route>
